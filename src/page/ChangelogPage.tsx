@@ -1,5 +1,3 @@
-import fs from 'node:fs'
-import path from 'node:path'
 import styler from '@alinea/styler'
 import type {Metadata, MetadataRoute} from 'next'
 import {remark} from 'remark'
@@ -17,15 +15,23 @@ export async function generateMetadata(): Promise<Metadata> {
   } as MetadataProps)
 }
 
-async function markdownToHtml(markdown: Buffer) {
+async function markdownToHtml(markdown: string) {
   const result = await remark().use(html).process(markdown)
   return result.toString()
 }
 
+export const dynamic = 'force-static'
+
 export default async function Changelog() {
-  const filePath = path.join(process.cwd(), '../../changelog.md')
-  const doc = fs.readFileSync(filePath)
-  const content = await markdownToHtml(doc || '')
+  const doc = await fetch(
+    'https://raw.githubusercontent.com/alineacms/alinea/refs/heads/main/changelog.md',
+    {
+      next: {
+        revalidate: 60 * 60 // 1 hour
+      }
+    }
+  ).then(res => res.text())
+  const content = await markdownToHtml(doc)
   return (
     <PageContainer>
       <PageContent>

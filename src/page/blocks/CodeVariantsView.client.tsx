@@ -1,12 +1,12 @@
 'use client'
 
-import {WebTypo} from '@/layout/WebTypo'
-import {CodeVariantsBlock} from '@/schema/blocks/CodeVariantsBlock'
 import styler from '@alinea/styler'
-import {Infer} from 'alinea'
+import type {Infer} from 'alinea'
 import {HStack} from 'alinea/ui'
 import {useAtom} from 'jotai'
 import {atomWithStorage} from 'jotai/utils'
+import {WebTypo} from '@/layout/WebTypo'
+import type {CodeVariantsBlock} from '@/schema/blocks/CodeVariantsBlock'
 import css from './CodeVariantsView.module.scss'
 
 const styles = styler(css)

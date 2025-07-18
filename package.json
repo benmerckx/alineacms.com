@@ -1,20 +1,24 @@
 {
   "private": true,
-  "name": "@alinea/web",
-  "version": "0.0.0",
+  "name": "alineacms.com",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbo -H 0.0.0.0",
-    "build": "bun run --cwd ../.. build && node ../../dist/cli.js build -- next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "alinea dev -- next dev",
+    "build": "alinea build -- next build",
+    "start": "next start"
   },
   "dependencies": {
+    "@alinea/styler": "^1.0.3",
+    "@biomejs/biome": "^2.1.2",
     "@monaco-editor/react": "^4.4.5",
     "@vercel/postgres": "^0.10.0",
+    "alinea": "^1.4.4",
+    "dtsroll": "^1.4.1",
+    "jotai": "^2.12.5",
     "lz-string": "^1.4.4",
-    "next": "^15.3.5",
+    "next": "^15.4.2-canary.7",
+    "p-lazy": "^5.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-string-replace": "^1.0.0",
@@ -24,21 +28,17 @@
     "use-clipboard-copy": "^0.2.0"
   },
   "devDependencies": {
-    "@fontsource/inter": "5.0.1",
+    "@fontsource/inter": "^5.2.6",
     "@fontsource/jetbrains-mono": "5.0.1",
-    "@fontsource/poppins": "5.0.1",
+    "@fontsource/poppins": "^5.2.6",
+    "@types/bun": "latest",
     "@types/node": "^22.5.2",
     "@types/react": "^18.2.13",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.0",
     "raw-loader": "^4.0.2",
+    "sass": "^1.89.2",
     "tsx": "^4.7.0",
     "typescript": "^5.6.2"
-  },
-  "exports": {
-    ".": "./dist/index.js",
-    "./css": "./dist/index.css",
-    "./*.cjs": "./dist/*.cjs",
-    "./*": "./dist/*.js"
   }
 }

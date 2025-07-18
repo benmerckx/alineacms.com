@@ -1,4 +1,4 @@
-@import '../style.scss';
+@use '@/style' as *;
 
 .root {
   --bg-faded: hsla(var(--web-header-background-hsl), 0.9);

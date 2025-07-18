@@ -1,7 +1,7 @@
 import styler from '@alinea/styler'
-import {IcRoundArrowBack} from '@alinea/ui/icons/IcRoundArrowBack'
-import {ImageLink, TextDoc} from 'alinea'
+import type {ImageLink, TextDoc} from 'alinea'
 import {HStack, imageBlurUrl} from 'alinea/ui'
+import {IcRoundArrowBack} from 'alinea/ui/icons/IcRoundArrowBack'
 import Image from 'next/image'
 import Link from 'next/link'
 import css from './DemoHeader.module.scss'
@@ -21,13 +21,11 @@ export function DemoHeader({image, backLink, credit}: DemoHeaderProps) {
   return (
     <header className={styles.root({open: hasImage})}>
       {backLink && (
-        <Link href={backLink}>
-          <a className={styles.root.back()}>
-            <HStack gap={8} center>
-              <IcRoundArrowBack />
-              <span>Back</span>
-            </HStack>
-          </a>
+        <Link href={backLink} className={styles.root.back()}>
+          <HStack gap={8} center>
+            <IcRoundArrowBack />
+            <span>Back</span>
+          </HStack>
         </Link>
       )}
 

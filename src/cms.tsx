@@ -1,6 +1,6 @@
-import * as schema from '@/schema'
 import {Config} from 'alinea'
 import {createCMS} from 'alinea/next'
+import * as schema from '@/schema'
 
 const pages = Config.root('Pages', {
   contains: ['Page', 'Home'],
