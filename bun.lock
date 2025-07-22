@@ -8,7 +8,7 @@
         "@biomejs/biome": "^2.1.2",
         "@monaco-editor/react": "^4.4.5",
         "@vercel/postgres": "^0.10.0",
-        "alinea": "^1.4.5",
+        "alinea": "https://pkg.pr.new/alineacms/alinea@2231326",
         "dtsroll": "^1.4.1",
         "jotai": "^2.12.5",
         "lz-string": "^1.4.4",
@@ -443,7 +443,7 @@
 
     "ajv-keywords": ["ajv-keywords@3.5.2", "", { "peerDependencies": { "ajv": "^6.9.1" } }, "sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ=="],
 
-    "alinea": ["alinea@1.4.5", "", { "dependencies": { "@alinea/iso": "^0.3.3", "esbuild": "^0.25.4" }, "peerDependencies": { "react": "*", "react-dom": "*" }, "bin": { "alinea": "dist/cli.js" } }, "sha512-Q+6s7epgzWQ6lKxuU6ed9cbrxGyswqHJnfpR0cwnHy93W8Mw1IwYf8xBZDaYYZeWem/bKlnqCn0vkRqEPP8ftg=="],
+    "alinea": ["alinea@https://pkg.pr.new/alineacms/alinea@2231326", { "dependencies": { "@alinea/iso": "^0.3.3", "esbuild": "^0.25.4" }, "peerDependencies": { "react": "*", "react-dom": "*" }, "bin": "./dist/cli.js" }],
 
     "ansi-regex": ["ansi-regex@5.0.1", "", {}, "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="],
 
