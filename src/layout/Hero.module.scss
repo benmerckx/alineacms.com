@@ -50,7 +50,7 @@
   line-height: 1.5;
   max-width: 50ch;
 
-  @include ml {
+  @include l {
     font-size: 17px;
     white-space: pre-line;
   }

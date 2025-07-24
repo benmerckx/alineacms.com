@@ -4,13 +4,14 @@
   display: flex;
   align-items: center;
   padding: 30px;
-  gap: 30px;
+  gap: 60px;
   border-radius: 24px;
   background-color: var(--web-background-variant);
 
   @include sm {
     flex-direction: column;
     padding: 20px;
+    gap: 30px;
   }
 
   > * {

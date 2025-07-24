@@ -41,7 +41,7 @@ export function TemplateBlock() {
             </li>
             <li className={styles.root.list.item()}>
               <Icon icon={IcRoundCheck} />
-              With contact page, about page
+              Built with Next.js and Tailwind CSS
             </li>
           </ul>
         </WebTypo>

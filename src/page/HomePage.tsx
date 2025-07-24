@@ -12,6 +12,7 @@ import type {Metadata, MetadataRoute} from 'next'
 import NextImage from 'next/image.js'
 import type {ComponentType, PropsWithChildren, SVGProps} from 'react'
 import heroBg from '@/assets/hero-alinea.jpg'
+import programBadge from '@/assets/program-badge.svg'
 import screenshot from '@/assets/screenshot.png'
 import screenshot2 from '@/assets/screenshot2.png'
 import {cms} from '@/cms'
@@ -120,6 +121,9 @@ export default async function HomePage() {
               style={{objectFit: 'cover', zIndex: -1}}
             />
             <VStack center>
+              <a href="https://vercel.com/oss" target="_blank" rel="noopener">
+                <img alt="Vercel OSS Program" src={programBadge.src} />
+              </a>
               <Hero.Title>{home.headline}</Hero.Title>
               <Hero.ByLine>{home.byline}</Hero.ByLine>
               <HStack
