@@ -1,7 +1,6 @@
 import styler from '@alinea/styler'
 import {Query} from 'alinea'
 import {Icon} from 'alinea/ui/Icon'
-import {IcRoundAccountTree} from 'alinea/ui/icons/IcRoundAccountTree'
 import {IcRoundInsertDriveFile} from 'alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundOpenInNew} from 'alinea/ui/icons/IcRoundOpenInNew'
 import {IcRoundPublish} from 'alinea/ui/icons/IcRoundPublish'
@@ -34,6 +33,7 @@ import {WebTypo} from '@/layout/WebTypo'
 import {Home} from '@/schema/Home'
 import {getMetadata} from '@/utils/metadata'
 import {CodeBlockView} from './blocks/CodeBlockView'
+import {TemplateBlock} from './blocks/TemplateBlock'
 import css from './HomePage.module.scss'
 
 const styles = styler(css)
@@ -187,6 +187,8 @@ export default async function HomePage() {
               </Feature>
             </Features>
 
+            <TemplateBlock />
+
             <section className={styles.home.section()}>
               <WebTypo>
                 <WebTypo.H2>
@@ -204,6 +206,7 @@ export default async function HomePage() {
                 <Image
                   alt="Alinea dashboard screenshot"
                   {...screenshot2}
+                  placeholder="blur"
                   sizes="50vw"
                   className={styles.home.section.screenshot()}
                 />

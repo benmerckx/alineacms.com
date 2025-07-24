@@ -3,8 +3,6 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "search.useGlobalIgnoreFiles": true,
-  "typescript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.importModuleSpecifier": "project-relative",
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit",

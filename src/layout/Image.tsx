@@ -13,7 +13,7 @@ export function Image({blurWidth, blurHeight, ...props}: ImageProps) {
   if (!props.src) return null
   return (
     <div className={styles.image()}>
-      <NextImage {...props} />
+      <NextImage {...props} placeholder="blur" />
     </div>
   )
 }
