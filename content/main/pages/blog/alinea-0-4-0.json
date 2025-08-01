@@ -2,7 +2,7 @@
   "_id": "2YlP39QVFZOzf94YMwDVrzd4gNz",
   "_type": "BlogPost",
   "_index": "Zy",
-  "title": "Alinea 0.4.0 ⚡",
+  "title": "RSC support and instant deploys",
   "publishDate": "2023-12-01",
   "author": {
     "name": "Ben Merckx",
@@ -243,7 +243,6 @@
     "title": "",
     "description": "",
     "openGraph": {
-      "siteName": "",
       "image": {
         "_id": "2i9FuSoeYtbbK9Oq7YNBJuygCit",
         "_type": "image",
