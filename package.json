@@ -4,8 +4,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "alinea dev -- next dev --turbopack",
-    "build": "alinea build -- next build --turbopack",
+    "dev": "alinea dev -- next dev",
+    "build": "alinea build -- next build",
     "start": "next start"
   },
   "dependencies": {
