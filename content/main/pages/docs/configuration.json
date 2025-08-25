@@ -2,7 +2,6 @@
   "_id": "259Ey7LXgqL7ZDGJ8XK1vBJmZrh",
   "_type": "Docs",
   "_index": "Zm4",
-  "_i18nId": "259Ey7LXgqL7ZDGJ8XK1vBJmZrh",
   "title": "Configuration",
   "navigationTitle": "",
   "body": [
@@ -19,10 +18,70 @@
     {
       "_type": "CodeBlock",
       "_id": "2a4tC7lBmNMZUuJDec7zsG4st62",
-      "code": "import {createCMS} from 'alinea/next'\n\nexport const cms = createCMS({\n  schema, workspaces, ...\n})",
+      "code": "import {createCMS} from 'alinea/next'\n\nexport const cms = createCMS({\n  baseUrl: {\n    development: 'http://localhost:3000',\n    production: 'https://alineacms.com'\n  },\n  enableDrafts: true,\n  preview: true,\n  schema: {...},\n  workspaces: {...}\n})",
       "fileName": "cms.ts",
       "language": "",
       "compact": false
+    },
+    {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`baseUrl`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "textAlign": "left",
+      "content": [
+        {
+          "_type": "text",
+          "text": "The URL of the frontend where Alinea is used."
+        }
+      ]
+    },
+    {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`enableDrafts`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "textAlign": "left",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Allows content editors to save and preview unpublished changes before publishing. "
+        }
+      ]
+    },
+    {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`preview`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "textAlign": "left",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Display an iframe with live previews on the side of the editor."
+        }
+      ]
     },
     {
       "_type": "heading",
@@ -95,46 +154,6 @@
         {
           "_type": "text",
           "text": ". Defining at least one is required."
-        }
-      ]
-    },
-    {
-      "_type": "heading",
-      "level": 3,
-      "content": [
-        {
-          "_type": "text",
-          "text": "`baseUrl`"
-        }
-      ]
-    },
-    {
-      "_type": "paragraph",
-      "textAlign": "left",
-      "content": [
-        {
-          "_type": "text",
-          "text": "The URL of the frontend where Alinea is used."
-        }
-      ]
-    },
-    {
-      "_type": "heading",
-      "level": 3,
-      "content": [
-        {
-          "_type": "text",
-          "text": "`preview`"
-        }
-      ]
-    },
-    {
-      "_type": "paragraph",
-      "textAlign": "left",
-      "content": [
-        {
-          "_type": "text",
-          "text": "Display an iframe with live previews on the side of the editor."
         }
       ]
     },
@@ -284,7 +303,6 @@
     "title": "",
     "description": "",
     "openGraph": {
-      "siteName": "",
       "image": {},
       "title": "",
       "description": ""

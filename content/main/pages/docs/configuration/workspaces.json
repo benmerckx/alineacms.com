@@ -18,7 +18,7 @@
     {
       "_type": "CodeBlock",
       "_id": "267Q4Kyg9hOUVaJWolmaa1wOndr",
-      "code": "import {Config} from 'alinea'\n\nConfig.workspace('Main workspace', {\n  source: 'content',\n  color: '#3F61E8',\n  mediaDir: 'public',\n  roots: {\n    // Website pages can be managed within this Root\n    pages: Config.root('Pages'),\n    // Image and file uploads will end up here\n    media: Config.media()\n  }\n})",
+      "code": "import {Config} from 'alinea'\n\nConfig.workspace('Main workspace', {\n  color: '#3F61E8',\n  source: 'content',\n  mediaDir: 'public',\n  roots: {\n    // Website pages can be managed within this Root\n    pages: Config.root('Pages'),\n    // Image and file uploads will end up here\n    media: Config.media()\n  }\n})",
       "fileName": "",
       "language": "",
       "compact": false
@@ -51,42 +51,6 @@
               "_entry": "259Ey7LXgqL7ZDGJ8XK1vBJmZrh",
               "_link": "entry",
               "title": ""
-            }
-          ]
-        },
-        {
-          "_type": "text",
-          "text": "."
-        }
-      ]
-    },
-    {
-      "_type": "heading",
-      "level": 3,
-      "content": [
-        {
-          "_type": "text",
-          "text": "`roots`"
-        }
-      ]
-    },
-    {
-      "_type": "paragraph",
-      "textAlign": "left",
-      "content": [
-        {
-          "_type": "text",
-          "text": "An object containing "
-        },
-        {
-          "_type": "text",
-          "text": "Roots",
-          "marks": [
-            {
-              "_type": "link",
-              "_id": "2c5D0rdh3wpYg35vLkio0mOCncI",
-              "_entry": "28hcdyq0sGJdgY6kM24NZd1XP5S",
-              "_link": "entry"
             }
           ]
         },
@@ -137,6 +101,42 @@
       ]
     },
     {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`roots`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "textAlign": "left",
+      "content": [
+        {
+          "_type": "text",
+          "text": "An object containing "
+        },
+        {
+          "_type": "text",
+          "text": "Roots",
+          "marks": [
+            {
+              "_type": "link",
+              "_id": "2c5D0rdh3wpYg35vLkio0mOCncI",
+              "_entry": "28hcdyq0sGJdgY6kM24NZd1XP5S",
+              "_link": "entry"
+            }
+          ]
+        },
+        {
+          "_type": "text",
+          "text": "."
+        }
+      ]
+    },
+    {
       "_type": "CodeBlock",
       "_id": "28hgVxGUBKpMWwiKvfkoBZmYX15",
       "code": "// content is stored in the `content` directory\nsource: './content'",
@@ -177,8 +177,8 @@
     "title": "",
     "description": "",
     "openGraph": {
-      "title": "",
       "image": {},
+      "title": "",
       "description": ""
     }
   }
