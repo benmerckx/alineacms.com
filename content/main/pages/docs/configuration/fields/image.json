@@ -69,13 +69,43 @@
           "text": "Limit the amount of rows in case of multiple links."
         }
       ]
+    },
+    {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`fields`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Defines nested sub-fields for the original object, allowing you to attach additional structured data."
+        }
+      ]
+    },
+    {
+      "_type": "CodeBlock",
+      "_id": "31pPLpkxeStQvJH5kAmOJDPxzC0",
+      "code": "import {Config, Field} from 'alinea'\n\nField.image('Image', {\n  fields: {alt: Field.text('Alt text')}\n})",
+      "fileName": "",
+      "language": ""
+    },
+    {
+      "_type": "ExampleBlock",
+      "_id": "31pPMZm4m3SZZ5keqEKvjSjCGED",
+      "code": "import {Config, Field} from 'alinea'\n\nexport default Field.image('Image', {\n  fields: {alt: Field.text('Alt text')}\n})"
     }
   ],
   "metadata": {
     "title": "Image field - Alinea CMS",
     "description": "",
     "openGraph": {
-      "siteName": "",
       "image": {},
       "title": "",
       "description": ""
