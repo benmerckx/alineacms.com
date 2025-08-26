@@ -95,11 +95,6 @@
       "code": "import {Config, Field} from 'alinea'\n\nField.image('Image', {\n  fields: {alt: Field.text('Alt text')}\n})",
       "fileName": "",
       "language": ""
-    },
-    {
-      "_type": "ExampleBlock",
-      "_id": "31pPMZm4m3SZZ5keqEKvjSjCGED",
-      "code": "import {Config, Field} from 'alinea'\n\nexport default Field.image('Image', {\n  fields: {alt: Field.text('Alt text')}\n})"
     }
   ],
   "metadata": {
