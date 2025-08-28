@@ -115,13 +115,39 @@
       "code": "import {Field, Query} from 'alinea'\n\nField.entry('Link to author', {\n  condition: {_type: 'Author'}\n})",
       "fileName": "",
       "language": ""
+    },
+    {
+      "_type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "_type": "text",
+          "text": "`location`"
+        }
+      ]
+    },
+    {
+      "_type": "paragraph",
+      "textAlign": "left",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Defines the location (workspace and root) where the explorer will be located."
+        }
+      ]
+    },
+    {
+      "_type": "CodeBlock",
+      "_id": "31uIXMVpPme7rebYzsJ4FOz59oH",
+      "code": "import {Field, Query} from 'alinea'\n\nField.entry('Link to author', {\n  location: {workspace: 'main', root: 'pages'\n})",
+      "fileName": "",
+      "language": ""
     }
   ],
   "metadata": {
     "title": "Entry field - Alinea CMS",
     "description": "",
     "openGraph": {
-      "siteName": "",
       "image": {},
       "title": "",
       "description": ""
