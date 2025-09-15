@@ -467,7 +467,11 @@
     "title": "Alinea - Open source headless CMS",
     "description": "Alinea is a open source headless CMS with minimal setup. Fully typed content right in your repository.",
     "openGraph": {
-      "image": {},
+      "image": {
+        "_id": "32jKw3vJ3B2ySfqzf5HremkBE4l",
+        "_type": "image",
+        "_entry": "32jKvTNjIfi5Bz4t0yrgRU6nDFA"
+      },
       "title": "",
       "description": ""
     }
