@@ -16,7 +16,7 @@ const handler = createHandler({
       )
     },
     github: {
-      rootDir: 'apps/web',
+      rootDir: '.',
       contentDir: 'content',
       authToken: process.env.ALINEA_GITHUB_TOKEN!,
       owner: process.env.ALINEA_GITHUB_OWNER!,
