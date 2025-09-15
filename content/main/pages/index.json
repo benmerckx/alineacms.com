@@ -2,7 +2,7 @@
   "_id": "home",
   "_type": "Home",
   "_index": "Zx",
-  "title": "Homepage",
+  "title": "Homepage 123",
   "hero": {
     "headline": "Git-based CMS\nBuilt for Next.js",
     "byline": "Open source headless CMS with minimal setup.\nFully typed content right in your repository.",
